@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "735867680288",
+    "project_id": "merchantmart3-b0cd5",
+    "storage_bucket": "merchantmart3-b0cd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735867680288:android:1ed7743bf5ec1217806e45",
+        "android_client_info": {
+          "package_name": "com.example.merchantmart2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1eLz750GL-cMT126yRl8kAnzFq4sEwSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

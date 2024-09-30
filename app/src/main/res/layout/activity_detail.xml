@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+    android:orientation="vertical">
+
+    <!-- Header Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to RentEassy Update Your Details Here!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+    <!-- ScrollView to enable scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- House Images -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <!-- First Image -->
+                <ImageView
+                    android:id="@+id/house_image_1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="House Image"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Second Image -->
+                <ImageView
+                    android:id="@+id/house_image_2"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="House Image"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Third Image -->
+                <ImageView
+                    android:id="@+id/house_image_3"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="House Image"
+                    android:scaleType="centerCrop"/>
+
+            </LinearLayout>
+
+            <!-- Owner's Name -->
+            <EditText
+                android:id="@+id/ownername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Owner's Name"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- City Name -->
+            <EditText
+                android:id="@+id/cityname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City Name"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- House Type -->
+            <EditText
+                android:id="@+id/housetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="House Type (e.g., 1, 2, or 3 BHK)"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- House Address -->
+            <EditText
+                android:id="@+id/address_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Total Rent Amount -->
+            <EditText
+                android:id="@+id/price_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Rent Amount"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+            <EditText
+                android:id="@+id/advance_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Advance Amount"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Contact Details -->
+            <EditText
+                android:id="@+id/contact_details_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Details"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Visiting Time -->
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Visiting Time"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Rent Inclusions -->
+            <EditText
+                android:id="@+id/rentinclusion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rent Inclusions"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Facilities -->
+            <EditText
+                android:id="@+id/facilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Facilities Available"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Text View for Upload Images -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Images Below 100kb for successful updation "
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"/>
+
+            <!-- Button to Upload Images -->
+            <Button
+                android:id="@+id/upload_images_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Images"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Button to Save Details -->
+            <Button
+                android:id="@+id/update_details_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Details"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

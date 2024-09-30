@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NotificationsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Owner Name -->
+            <EditText
+                android:id="@+id/etOwnerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Owner's Name" />
+
+            <!-- Contact Number -->
+            <EditText
+                android:id="@+id/etContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Number" />
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address" />
+
+            <!-- Rent Price -->
+            <EditText
+                android:id="@+id/etRentPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rent Price" />
+
+            <!-- House Type (Spinner) -->
+            <Spinner
+                android:id="@+id/spinnerHouseType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@style/TextAppearance.Material3.TitleMedium"
+                android:padding="8dp"
+                android:prompt="@string/house_type_prompt" />
+
+            <!-- Amenities -->
+            <EditText
+                android:id="@+id/etAmenities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amenities" />
+
+            <!-- Rent Includes -->
+            <EditText
+                android:id="@+id/etRentIncludes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rent Includes" />
+
+            <!-- Save Details Button -->
+            <Button
+                android:id="@+id/btnSaveDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Details" />
+
+            <!-- Image Slider -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="142dp" />
+
+            <!-- Add Photos Button -->
+            <Button
+                android:id="@+id/btnAddPhotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Photos" />
+
+            <!-- Photo Slide Options -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

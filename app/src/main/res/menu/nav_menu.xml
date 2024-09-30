@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:iconTint="@color/lightyellow"
+        android:title="Home"/>
+
+
+    <item
+        android:id="@+id/savedhouse"
+        android:icon="@drawable/bookmark"
+        android:iconTint="@color/light_background_color"
+        android:title="Saved"/>
+
+    <item
+        android:id="@+id/Profile"
+        android:icon="@drawable/profileicon"
+        android:iconTint="@color/lightcr"
+        android:title="User"/>
+
+
+</menu>

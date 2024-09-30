@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/ownerhomepg"
+    android:layout_height="match_parent"
+    tools:context=".OwnerMainActivity">
+
+    <!-- ImageButton with square shape in the middle of the layout -->
+
+    <!-- Button in top right corner -->
+
+    <ImageButton
+        android:id="@+id/square_image_button"
+        android:layout_width="261dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="528dp"
+        android:background="@drawable/mangeico"
+        android:contentDescription="Click here to manage ur houses"
+        android:scaleType="centerInside"
+        android:src="@drawable/mangeico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/yellow"
+        android:text="logout"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView for description -->
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="469dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="CLICK THE ABOVE ICON TO CONTINUE"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/square_image_button"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/square_image_button"
+        app:layout_constraintTop_toBottomOf="@+id/square_image_button"
+        app:layout_constraintVertical_bias="0.727" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_disabled"
+    tools:context=".BookingActivity">
+
+  <!-- Heading -->
+  <TextView
+      android:id="@+id/headingTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Booking Details"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"/>
+
+  <!-- Owner's Name -->
+  <TextView
+      android:id="@+id/ownerTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Owner name:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/headingTextView"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"/>
+
+  <TextView
+      android:id="@+id/ownerNameTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/ownerTitleTextView"
+      app:layout_constraintTop_toTopOf="@id/ownerTitleTextView" />
+
+  <!-- City Name -->
+  <TextView
+      android:id="@+id/cityTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="City name:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/ownerNameTextView"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"/>
+
+  <TextView
+      android:id="@+id/cityTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/cityTitleTextView"
+      app:layout_constraintTop_toTopOf="@id/cityTitleTextView" />
+
+  <!-- House Type -->
+  <TextView
+      android:id="@+id/houseTypeTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="House type:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/cityTextView"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"/>
+
+  <TextView
+      android:id="@+id/houseTypeTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/houseTypeTitleTextView"
+      app:layout_constraintTop_toTopOf="@id/houseTypeTitleTextView" />
+
+  <!-- Address -->
+  <TextView
+      android:id="@+id/addressTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Address:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/houseTypeTextView"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"/>
+
+  <TextView
+      android:id="@+id/addressTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/addressTitleTextView"
+      app:layout_constraintTop_toTopOf="@id/addressTitleTextView" />
+
+  <!-- Price -->
+  <TextView
+      android:id="@+id/priceTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Monthly rent amount:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/addressTextView"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"/>
+
+  <TextView
+      android:id="@+id/priceTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/priceTitleTextView"
+      app:layout_constraintTop_toTopOf="@id/priceTitleTextView" />
+
+  <!-- Advance Amount -->
+  <TextView
+      android:id="@+id/advanceTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Advance amount:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/priceTextView"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"/>
+
+  <TextView
+      android:id="@+id/advanceTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/advanceTitleTextView"
+      app:layout_constraintTop_toTopOf="@id/advanceTitleTextView" />
+
+  <!-- Contact Details -->
+  <TextView
+      android:id="@+id/contactDetailsTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Contact details:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/advanceTextView"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"/>
+
+  <TextView
+      android:id="@+id/contactDetailsTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/contactDetailsTitleTextView"
+      app:layout_constraintTop_toTopOf="@id/contactDetailsTitleTextView" />
+
+  <!-- Visit Time -->
+  <TextView
+      android:id="@+id/timeTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Visit time:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/contactDetailsTextView"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"/>
+
+  <Button
+      android:id="@+id/chooseDateTimeButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="124dp"
+      android:layout_marginTop="20dp"
+      android:text="Choose Date and Time"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/timeTitleTextView" />
+
+  <TextView
+      android:id="@+id/selectedDateTimeTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:textSize="16sp"
+      android:visibility="gone"
+      app:layout_constraintStart_toStartOf="@id/timeTitleTextView"
+      app:layout_constraintTop_toBottomOf="@id/chooseDateTimeButton"
+      android:layout_marginTop="8dp" />
+
+  <!-- Rent Inclusions -->
+
+  <TextView
+      android:id="@+id/rentInclusionsTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:text="Rent inclusions:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/selectedDateTimeTextView" />
+
+  <TextView
+      android:id="@+id/rentInclusionsTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/rentInclusionsTitleTextView"
+      app:layout_constraintTop_toTopOf="@id/rentInclusionsTitleTextView" />
+
+  <!-- Facilities -->
+
+  <TextView
+      android:id="@+id/facilitiesTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Facilities:"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/rentInclusionsTextView"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"/>
+
+  <TextView
+      android:id="@+id/facilitiesTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/facilitiesTitleTextView"
+      app:layout_constraintTop_toTopOf="@id/facilitiesTitleTextView" />
+
+  <!-- Confirm Booking Button -->
+
+  <Button
+      android:id="@+id/confirmBookingButton"
+      android:layout_width="192dp"
+      android:layout_height="45dp"
+      android:layout_marginStart="140dp"
+      android:layout_marginTop="144dp"
+      android:text="Confirm Booking"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/facilitiesTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

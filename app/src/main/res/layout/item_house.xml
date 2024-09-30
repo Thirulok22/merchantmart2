@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- House Images -->
+    <LinearLayout
+        android:id="@+id/imageLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- First Image -->
+        <ImageView
+            android:id="@+id/ImageView0"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="ImageView0" />
+
+        <!-- Second Image -->
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="ImageView1" />
+
+        <!-- Third Image -->
+        <ImageView
+            android:id="@+id/ImageView2"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:contentDescription="ImageView2" />
+    </LinearLayout>
+
+    <!-- Owner's Name -->
+    <TextView
+        android:id="@+id/ownerTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Owner name:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLinearLayout" />
+
+    <TextView
+        android:id="@+id/ownerNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ownerTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/ownerTitleTextView" />
+
+    <!-- City Name -->
+    <TextView
+        android:id="@+id/cityTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="City name:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ownerNameTextView" />
+
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cityTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/cityTitleTextView" />
+
+    <!-- House Type -->
+    <TextView
+        android:id="@+id/houseTypeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="House type:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cityTextView" />
+
+    <TextView
+        android:id="@+id/houseTypeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/houseTypeTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/houseTypeTitleTextView" />
+
+    <!-- House Address -->
+    <TextView
+        android:id="@+id/addressTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Address:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/houseTypeTextView" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/addressTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/addressTitleTextView" />
+
+    <!-- Total Rent Amount -->
+    <TextView
+        android:id="@+id/priceTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Monthly rent amount:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addressTextView" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/priceTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/priceTitleTextView" />
+
+    <!-- Advance Amount -->
+    <TextView
+        android:id="@+id/advanceTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Advance amount:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/priceTextView" />
+
+    <TextView
+        android:id="@+id/advanceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/advanceTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/advanceTitleTextView" />
+
+    <!-- Contact Details -->
+    <TextView
+        android:id="@+id/contactDetailsTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Contact details:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/advanceTextView" />
+
+    <TextView
+        android:id="@+id/contactDetailsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/contactDetailsTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/contactDetailsTitleTextView" />
+
+    <!-- Visiting Time -->
+    <TextView
+        android:id="@+id/timeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Visit time:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactDetailsTextView" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/timeTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/timeTitleTextView" />
+
+    <!-- Rent Inclusions -->
+    <TextView
+        android:id="@+id/rentInclusionsTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rent includes:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeTextView" />
+
+    <TextView
+        android:id="@+id/rentInclusionsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/rentInclusionsTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/rentInclusionsTitleTextView" />
+
+    <!-- Facilities -->
+    <TextView
+        android:id="@+id/facilitiesTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Facilities:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rentInclusionsTextView" />
+
+    <TextView
+        android:id="@+id/facilitiesTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/facilitiesTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/facilitiesTitleTextView" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facilitiesTextView">
+
+        <!-- Booking Button -->
+        <LinearLayout
+            android:layout_width="212dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_google_signin_btn_text_light_disabled"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/booking"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:contentDescription="Book"
+                app:srcCompat="@drawable/baseline_library_books_24" />
+
+            <TextView
+                android:id="@+id/bookingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="booking details"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <LinearLayout
+            android:layout_width="232dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@color/common_google_signin_btn_text_light_disabled"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/SaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:contentDescription="Save"
+                android:onClick="onSaveButtonClick"
+                android:src="@drawable/baseline_bookmark_add_24" />
+
+            <TextView
+                android:id="@+id/savedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save House"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
