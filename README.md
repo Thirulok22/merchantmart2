@@ -1,95 +1,76 @@
-# renteassy 
-Home renting sofware  is named as rent eassy  an Android application built using Kotlin and Firebase, designed to streamline the rental process for both tenants and property owners. The app includes essential features such as user authentication, property listing, booking management, and house detail management.
+Renteassy 🏠
 
-Features
+Renteassy is an Android application built using Kotlin and Firebase, designed to streamline the rental process for both tenants and property owners. It provides essential features such as user authentication, property listing, booking management, and house detail management to enhance the renting experience.
 
-1 User Authentication: Secure login and signup with Firebase Authentication for both owners and users integrated in 1 login with different users .
+Features 🚀
+✅ User Authentication – Secure login and signup using Firebase Authentication, supporting both owners and tenants in a single login.
 
-2 Property Management: Add immages of house,address, contact information ,price  , edit, and delete properties easily. 
+✅ Property Management – Users can add, edit, and delete property details, including images, addresses, contact information, and pricing.
 
-3 Booking System: Users can send booking requests using contact details , and owners can accept or reject them.
+✅ Booking System – Tenants can send booking requests using contact details, while owners can accept or reject requests.
 
-4 Saved Listings: Users can save their favorite properties for easy access.
+✅ Saved Listings – Users can save their favorite properties for future reference.
 
-5 Profile Management: Users can update their personal details and manage preferences.
+✅ Profile Management – Users can update their personal details and preferences.
 
-* Firebase Integration: Uses Firebase Realtime Database for efficient data storage.
+✅ Firebase Integration – The app utilizes Firebase Realtime Database for secure and efficient data storage.
 
-Intuitive UI: A user-friendly interface designed for ease of use.
+✅ Intuitive UI – A user-friendly interface designed for seamless navigation and smooth user experience.
 
-*Installation
-
+Installation 🛠️
 Prerequisites
-
-Android Studio installed on your system.
-
-*Firebase project set up with necessary configurations.
+✔️ Android Studio installed on your system.
+✔️ Firebase project set up with necessary configurations.
 
 Steps to Set Up the Project
+1️⃣ Clone the repository
 
-Clone the repository:
+bash
+Copy
+Edit
+git clone https://github.com/Thirulok22/merchantmart2.git
+2️⃣ Open the project in Android Studio.
 
-Open the project in Android Studio.
+3️⃣ Sync Gradle files and install dependencies.
 
-Sync Gradle files and install dependencies.
-
-Add Firebase Configuration:
+4️⃣ Add Firebase Configuration:
 
 Download the google-services.json file from Firebase.
-
 Place it inside the app/ directory.
+5️⃣ Run the application on an emulator or a real device.
 
-Run the application on an emulator or a real device.
-
-*Technologies Used
-
-Programming Language: Kotlin
-
-Development Platform: Android Studio
-
-Database: Firebase Realtime Database
-
-* Other Tools:
-
+Technologies Used 🔧
+Programming Language – Kotlin
+Development Platform – Android Studio
+Database – Firebase Realtime Database
+Other Tools & Libraries
 Firebase Authentication
-
 Firebase SDK
-
 Material Design Components
+Glide/Picasso – For image handling
+Retrofit/Volley – For network requests
+Gson/Moshi – For JSON parsing
+Android Jetpack Components
+Crashlytics – For monitoring app stability
 
-Glide/Picasso for image handling
+Usage 👨‍💻
+1️⃣ Sign up or log in using an email and password.
+2️⃣ List properties as a property owner.
+3️⃣ Search for rental properties as a tenant.
+4️⃣ Manage bookings and reservations.
+5️⃣ Save favorite listings for future reference.
 
-Retrofit/Volley for network requests
+Contributing 🤝
+Feel free to fork this repository and submit pull requests for improvements. Contributions are always welcome!
 
-Gson/Moshi for JSON parsing
-
-Android Jetpack components
-
-Crashlytics for monitoring app stability
-
-Usage
-
-1 Sign up or log in using an email and password.
-
-2 List properties as a property owner.
-
-3 Search for rental properties as a tenant.
-
-4 Manage bookings and reservations.
-
-5 Save favorite listings for future reference.
-
-* Contributing
-
-Feel free to fork this repository and submit pull requests for improvements.
-
-* License
-
+License 📜
 This project is licensed under the MIT License.
 
 
 
-## Screenshots
+
+
+Screenshots 📸
 
 ### Splash Screen  
 ![Splash Screen](splash%20logo.jpg)
