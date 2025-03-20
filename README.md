@@ -1,5 +1,5 @@
-# MerchantMart2 
-MerchantMart2 is named as rent eassy  an Android application built using Kotlin and Firebase, designed to streamline the rental process for both tenants and property owners. The app includes essential features such as user authentication, property listing, booking management, and house detail management.
+# renteassy 
+Home renting sofware  is named as rent eassy  an Android application built using Kotlin and Firebase, designed to streamline the rental process for both tenants and property owners. The app includes essential features such as user authentication, property listing, booking management, and house detail management.
 
 Features
 
